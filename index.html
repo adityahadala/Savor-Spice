@@ -8,34 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script>
-(function () {
-  var TARGET = "";
-
-  var bots = [
-    "Googlebot","Googlebot-Image","Googlebot-News","Googlebot-Video",
-    "AdsBot-Google","Google-InspectionTool","Google-Safety",
-    "bingbot","msnbot","BingPreview","adidxbot",
-    "facebookexternalhit","Facebot","Twitterbot","Applebot","Amazonbot",
-    "Ahrefsbot","SemrushBot","DotBot","MJ12bot","BLEXBot",
-    "Screaming Frog","SiteAuditBot","DataForSeoBot",
-    "python-requests","curl/","wget/","axios/","Go-http-client",
-    "Java/","libwww","scrapy","HeadlessChrome",
-    "YandexBot","Baiduspider","DuckDuckBot","Sogou","Exabot",
-    "ia_archiver","CCBot","ChatGPT-User","GPTBot","Claude-Web",
-    "PerplexityBot","anthropic-ai"
-  ];
-
-  var ua = navigator.userAgent || "";
-  for (var i = 0; i < bots.length; i++) {
-    if (ua.indexOf(bots[i]) !== -1) return;
-  }
-  if (navigator.webdriver) return;
-  if (/HeadlessChrome/.test(ua)) return;
-
-  window.location.replace(TARGET);
-})();
-</script>
     <!-- ===================== NAVIGATION ===================== -->
     <nav class="navbar" id="navbar">
         <div class="container navbar-inner">
